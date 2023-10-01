@@ -1,186 +1,254 @@
-/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Poppins:wght@200&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 0;
     padding: 0;
-    background-color: white;
-}
-
-.form-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 650px;
-    background: #fff;
-    padding: 40px 30px;
-    border-radius: 30px;
-    box-shadow: 0 0 5px rgba(45, 44, 45, 0.432);
-    border: solid #4a4848b1 1px;
+    min-height: 100vh;
 }
 
-.form-control {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.container-principal {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.container {
+    width: calc(100% - 10px); 
+    width: 600px; 
+    padding: 20px; 
+    margin: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: left; 
+}
+
+.historico-container {
+    height: auto;
+    width: calc(100% - 10px); 
+    width: 600px; 
+    padding: 20px; 
+    margin: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: left; 
+}
+
+.container form,
+.historico-container form {
+    margin-top: 20px; 
+}
+
+
+.historico-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.lista-corridas {
+    list-style: none;
     padding: 10px;
-    margin: 5px 0;
-    width: 100%;
-    font-size: 16px;
+}
+
+.corrida {
+    border: 1px solid #ececec;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.corrida-info {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.ver-detalhes {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.ver-detalhes:hover {
+    background-color: #0056b3;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+
+h2 {
+    text-align: center;
 }
 
 label {
     font-weight: bold;
-}
-
-.btn-success {
-    color: #fff;
-    background-color: #2831a7;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.btn-success:hover {
-    background-color: #1e248a;
-}
-
-.hidden {
-    display: none;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-span[for], label[for] {
-    display: block; 
-    margin-top: 10px; 
-    margin-bottom: 5px; 
-    padding-left: 5px;
-    font-weight: bold;
-    text-align: left;
-    font-size: 16px; 
-    color: #333; 
-}
-
-label.radio-label {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px; 
-    margin-right: 15px;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 24px;
-    color: #333;
-}
-
-label.radio-label::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 2px; 
-    width: 20px;
-    height: 20px;
-    border: 2px solid #0070c9;
-    border-radius: 50%;
-    background-color: transparent;
-    transition: background-color 0.2s, border-color 0.2s;
-}
-
-input[type="radio"]:checked + label.radio-label::before {
-    background-color: #0070c9; 
-    border-color: #0070c9; 
-}
-
-.payment-container {
-    background-color: #f7f7f7;
-    padding: 30px;
+    display: block;
+    margin-top: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px; 
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px; 
+    margin-left: 15px;
 }
 
-.payment-container img {
-    max-width: 170px;
-    margin: 20px 0;
-}
-
-.payment-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.payment-option {
+.cpf,
+.cep,
+.tel {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
-    transition: border-color 0.3s;
+    margin-left: 15px;
 }
 
-.payment-option:hover {
-    border-color: #0070c9;
-    cursor: pointer;
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
 }
 
-.payment-option input[type="radio"] {
-    display: none;
+input[type="number"] {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
 }
 
-.payment-option label {
-    display: inline-block;
-    padding-left: 30px;
-    position: relative;
-    cursor: pointer;
+.bairro,
+.cidade {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+
 }
 
-.payment-option label::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 1px;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    transition: border-color 0.3s;
+input[type="password"],
+input[type="date"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
 }
 
-input[type="radio"]:checked + label::before {
-    border-color: #0070c9;
-    background-color: #0070c9;
-}
 
-.btn-pagamento {
-    background-color: #0070c9;
+button {
+    display: block;
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
+    margin-left: 100px;
+    margin-top: 15px;
 }
 
-.btn-pagamento:hover {
-    background-color: #005db9;
+button:hover {
+    background-color: #0056b3;
 }
 
-#pixForm .texto-pagamentos,
-#cartaoCreditoForm .texto-pagamentos,
-#cartaoDebitoForm .texto-pagamentos {
-    font-size: 8px;
+#pais,
+#estado {
+    width: 43%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+label[for="pais"],
+label[for="estado"] {
+    font-weight: bold;
+    display: block;
     margin-top: 10px;
-    color: #777;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 940px) {
+
+    .container,
+    .historico-container {
+        width: 100%; 
+        float: none; 
+        margin: 20px; 
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 0; 
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .container,
+    .historico-container {
+        width: 100%; 
+        margin: 20px;
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 10px;
+        justify-self: center;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container,
+    .historico-container {
+        width: 100%; 
+        float: none; 
+        margin: 20px; 
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 0; 
+    }
 }
