@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu-mobile.css"> 
+<link rel="stylesheet" href="css/carousel.css">
+<script src="https://kit.fontawesome.com/2d5a50068d.js" crossorigin="anonymous"></script>
+<title>Home</title>    
+</head>
+
+<body>
+<header>
+    <h1>
+        <img src="images/easycarros-logo 1.png" alt="nome da empresa">
+    </h1>
+
+    <!-- MENU MOBILE -->
+    <input type="checkbox" id="control-nav">
+    <label for="control-nav" class="control-nav"></label>
+    <label for="control-nav" class="control-nav-close"></label>
+
+    <!-- MENU BAR -->
+    <nav>
+        <ul>
+            <li>
+                <a class="active" href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="pages/carros.html">Carros</a>
+            </li>
+
+            <li>
+                <a href="pages/pagamento.html">Pagamento</a>
+            </li>
+
+            <li>
+                <a href="pages/historico.html">Histórico</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- CARROSSEL DE IMAGENS -->
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/banner 1.png" alt="planos mensais">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/banner 2.png" alt="oferta de diferentes modalidades de treino">
+            </div>
+        </div>
+
+        <button class="carousel-button" id="meuPrevButton">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-button" id="meuNextButton">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+    </section>
+
+    <section class="search-container">
+        <div class="search-box">
+            <div class="search-input">
+                <input type="text" id="car-search" placeholder="Onde você quer alugar?">
+                <div class="search-hint"></div>
+            </div>
+            <div class="date-picker">
+                <label for="pickup-date" class="texto1">Retirada</label>
+                <input type="date" id="pickup-date">
+            </div>
+            <div class="date-picker">
+                <label for="return-date" class="texto2">Devolução</label>
+                <input type="date" id="return-date">
+            </div>
+            <button id="search-button">Pesquisar</button>
+        </div>
+    </section>
+    
+    
+    <!-- SEÇÃO SOBRE O MODO DE FUNCIONAMENTO -->
+    <section class="about-container">
+        <div class="about-image">
+            <img src="images/capa_nosso_modelo.png" alt="Modo de Funcionamento">
+        </div>
+    </section>
+
+    
+    <!-- SEÇÃO CARROSSEL CARROS -->
+    <section class="carrossel-carros-container">
+        <h2>Nossos carros híbridos</h2>
+        <p>Explore nossos carros híbridos avançados, onde a economia de combustível se encontra com a tecnologia sustentável para uma experiência de condução excepcional</p>
+        <button class="carrossel-carros-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carrossel-carros-viewport">
+            <div class="carrossel-carros-wrapper">
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/civic.png" alt="Carro 1">
+                    <h4>Categoria: Sedan Hybrido</h4>
+                    <p>Honda Civic</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 55,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/toyota-corolla-cross.jpg" alt="Carro 2">
+                    <h4>Categoria: SUV</h4>
+                    <p>Corolla Cross</p>
+                    <p>Ano: 2021</p>
+                    <p>Preço da Hora: R$ 67,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/kona.png" alt="Carro 3">
+                    <h4>Categoria: Compact</h4>
+                    <p>Hyundai Kona</p>
+                    <p>Ano: 2021</p>
+                    <p>Preço da Hora: R$ 41,00</p>
+                </div>
+        
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/volvo-xc60.png" alt="Carro 4">
+                    <h4>Categoria: SUV</h4>
+                    <p>Volco XC60</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 85,00</p>
+                </div>
+        
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/kia-niro.png" alt="Carro 5">
+                    <h4>Categoria: Compact</h4>
+                    <p>Kia Niro</p>
+                    <p>Ano: 2022</p>
+                    <p>Preço da Hora: R$ 50,00</p>
+                </div> 
+
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/consorcio-tiggo-5x.png" alt="Carro 6">
+                    <h4>Categoria: SUV</h4>
+                    <p>Tiggo 5x</p>
+                    <p>Ano: 2020</p>
+                    <p>Preço da Hora: R$ 65,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/haval_h6.png" alt="Carro 7">
+                    <h4>Categoria: SUV</h4>
+                    <p>Haval H6</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 65,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/Toyota-Prius-C.png" alt="Carro 8">
+                    <h4>Categoria: Sedan</h4>
+                    <p>Prius C</p>
+                    <p>Ano: 2023</p>
+                    <p>Preço da Hora: R$ 45,00</p>
+                </div>
+                <div class="carrossel-carros-item">
+                    <img src="images/carros/audi-q5.png" alt="Carro 9">
+                    <h4>Categoria: SUV</h4>
+                    <p>Audi Q5</p>
+                    <p>Ano: 2021</p>
+                    <p>Preço da Hora: R$ 90,00</p>
+                </div>
+            </div>
+        </div>    
+        
+        <button class="carrossel-carros-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <div class="novidades-container">
+        <h2>Confira nossas novidades</h2>
+
+        <div class="novidade-item">
+            <img src="images/ferias.jpg" alt="Descrição do card 1">
+            <h3>Férias com a Easy Carros</h3>
+            <p>Descubra sobre nossos cuidados que garantem uma condução segura para você.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+        
+        <div class="novidade-item">
+            <img src="images/pix.jpg" alt="Descrição do card 2">
+            <h3>Nova forma de pagamento</h3>
+            <p>Explore as mais recentes e convenientes opções de pagamento via Pix. Pagamento rápido e seguro</p>
+            <a href="#">Saiba mais</a>
+        </div>
+
+        <div class="novidade-item">
+            <img src="images/carro-eletrico.jpg" alt="Descrição do card 3">
+            <h3>Nossos carros elétricos</h3>
+            <p>Acelere em direção ao futuro com os nossos carros elétricos, combinando desempenho e sustentabilidade.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+
+        <div class="novidade-item">
+            <img src="images/destino.jpg" alt="Descrição do card 4">
+            <h3>Destinos para você conhecer</h3>
+            <p>Explore destinos emocionantes com o conforto dos nossos carros para viagem. Conduza sua jornada de descoberta.</p>
+            <a href="#">Saiba mais</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-coluna">
+                <h4>Sobre </h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">Sobre nós</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Nossos serviços</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Politica de privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Para você</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()" class="b-click">Minhas reservas</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Fidelidade</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Dúvidas</h4>
+                <ul>
+                    <li><a href="javascript:;" onclick="msg()">FAQ</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Seja um franqueado</a></li>
+                    <li><a href="javascript:;" onclick="msg()">Política de pagamento </a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h4>Redes</h4>
+                <div class="social-links">
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-instagram"></i></a>
+                    <a href="javascript:;" onclick="msg()"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; Alguns direitos reservados | &lt;GLNTV&gt;</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/carousel-carros.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
+

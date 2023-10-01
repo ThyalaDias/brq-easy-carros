@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Adicione as regras CSS abaixo */
+
+.container-principal {
+    display: flex;
+    justify-content: space-between; /* Coloca os formulários lado a lado em telas maiores */
+    flex-wrap: wrap; /* Permite que os formulários se empilhem em telas menores */
+    gap: 20px; /* Espaçamento entre os formulários */
+}
+
+.container {
+    width: calc(100% - 10px); /* Define a largura dos formulários para 50% com espaço para o gap */
+    width: 600px; /* Define uma largura máxima para evitar que os formulários fiquem muito largos */
+    padding: 20px; /* Adiciona algum espaço interno */
+    margin: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.historico-container {
+    height: auto;
+    width: calc(100% - 10px); /* Define a largura dos formulários para 50% com espaço para o gap */
+    width: 600px; /* Define uma largura máxima para evitar que os formulários fiquem muito largos */
+    padding: 20px; /* Adiciona algum espaço interno */
+    margin: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.container form,
+.historico-container form {
+    margin-top: 20px; /* Adiciona espaço entre os formulários */
+}
+
+
+
+.historico-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.lista-corridas {
+    list-style: none;
+    padding: 2px;
+}
+
+.corrida {
+    border: 1px solid #ececec;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.corrida-info {
+    margin-bottom: 10px;
+}
+
+.ver-detalhes {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.ver-detalhes:hover {
+    background-color: #0056b3;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.cpf,
+.cep,
+.tel {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+input[type="number"] {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.bairro,
+.cidade {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+
+}
+
+input[type="password"],
+input[type="date"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#pais,
+#estado {
+    width: 43%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+label[for="pais"],
+label[for="estado"] {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 940px) {
+
+    .container,
+    .historico-container {
+        width: 100%; 
+        float: none; 
+        margin: 20px; 
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 0; 
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .container,
+    .historico-container {
+        width: 100%; 
+        margin: 20px;
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 10px;
+        justify-self: center;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container,
+    .historico-container {
+        width: 100%; 
+        float: none; 
+        margin: 20px; 
+    }
+
+    .container form,
+    .historico-container form {
+        margin-top: 20px; 
+    }
+
+    .historico-container {
+        margin-top: 0; 
+    }
+}
